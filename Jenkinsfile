@@ -33,17 +33,6 @@ agent any
         }
         
         
-        stage('Publish Extent Report'){
-            steps{
-                     publishHTML([allowMissing: false,
-                                  alwaysLinkToLastBuild: false, 
-                                  keepAll: false, 
-                                  reportDir: 'build', 
-                                  reportFiles: 'TestExecutionReport.html', 
-                                  reportName: 'HTML Extent Report', 
-                                  reportTitles: ''])
-            }
-        }
         
         
         
